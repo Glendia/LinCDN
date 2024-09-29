@@ -1,2 +1,0 @@
-# LinCDN
-Free CDN
