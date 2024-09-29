@@ -4,7 +4,7 @@ node_modules/
 npm-debug.log
 yarn-error.log
 yarn.lock
-dist
+
 # 忽略 VitePress 缓存
 .vitepress/cache
 

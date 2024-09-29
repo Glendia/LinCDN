@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a}from"./chunks/framework.R2dtW3-2.js";const u=JSON.parse('{"title":"About","description":"","frontmatter":{"layout":"page","title":"About"},"headers":[],"relativePath":"about/index.md","filePath":"about/index.md"}'),o={name:"about/index.md"};function n(r,s,c,i,d,p){return a(),e("div")}const l=t(o,[["render",n]]);export{u as __pageData,l as default};
