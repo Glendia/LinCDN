@@ -4,7 +4,7 @@
     max-width: 1152px;
     height: 500px;
     margin:20px auto;
-    background: url('./assets/go.png');
+    background: url('/assets/go.png');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
