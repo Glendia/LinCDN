@@ -1,0 +1,56 @@
+name: Deploy to OSS
+
+on:
+  push:
+    branches:
+      - main  # 或者其他需要触发的分支
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20.10.0'
+
+    - name: Install dependencies
+      run: |
+        npm install -g pnpm
+        pnpm install
+
+    - name: Build project
+      run: pnpm run build
+
+    - name: Configure OSS credentials
+      run: |
+        echo "ALIYUN_ACCESS_KEY_ID=${{ secrets.ALIYUN_ACCESS_KEY_ID }}" >> $GITHUB_ENV
+        echo "ALIYUN_ACCESS_KEY_SECRET=${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}" >> $GITHUB_ENV
+        echo "ALIYUN_OSS_ENDPOINT=${{ secrets.ALIYUN_OSS_ENDPOINT }}" >> $GITHUB_ENV
+        echo "ALIYUN_OSS_BUCKET=${{ secrets.ALIYUN_OSS_BUCKET }}" >> $GITHUB_ENV
+
+    - name: Install OSS CLI
+      run: |
+        wget https://gosspublic.alicdn.com/ossutil/v2-beta/2.0.3-beta.09261200/ossutil-2.0.3-beta.09261200-linux-amd64.zip
+        unzip ossutil-2.0.3-beta.09261200-linux-amd64.zip
+        sudo mv ossutil /usr/local/bin/
+
+    - name: Upload files to OSS
+      run: |
+        export OSSUTIL_CONFIG_FILE=$HOME/.ossutil.cfg
+        cat > $HOME/.ossutil.cfg <<EOF
+        [Credentials]
+        accessKeyID = ${{ env.ALIYUN_ACCESS_KEY_ID }}
+        accessKeySecret = ${{ env.ALIYUN_ACCESS_KEY_SECRET }}
+
+        [default]
+        endpoint = ${ALIYUN_OSS_ENDPOINT}
+        bucket = ${ALIYUN_OSS_BUCKET}
+        dir = /
+        EOF
+
+        ossutil cp dist/ oss://${ALIYUN_OSS_BUCKET}/ -r -s
