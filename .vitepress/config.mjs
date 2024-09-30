@@ -28,7 +28,7 @@ export default defineConfig({
   markdown: markdown, //markdown配置
   head: head, //浏览器加载头部
   metaChunk: true, //内容提取到单独的js文件中，页面加载更快
-  sitemap: sitemap, //站点地图
+  sitemap: sitemap, //站点地图xml
   themeConfig: {
     logo: { light: "./logo.svg", dark: "./logo-dark.svg", alt: "LinCDN" }, //logo
     siteTitle: false, //隐藏标题

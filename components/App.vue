@@ -41,21 +41,20 @@
 }
 </style>
 <template>
-  <div class="CustomHome">
-    <img src="../assets/go.png" alt="示例图片" class="responsive-image" />
-  </div>
-<div class="CustomLogo">
-    <div class="CustomImg">
-        <img src="/assets/221212112.svg" alt="Image 1">
-        <img src="/assets/91b7b86cc6.svg" alt="Image 2">
-        <img src="/assets/en2gie.svg" alt="Image 3">
-        <img src="/assets/17f8d97df5.svg" alt="Image 5">
-        <img src="/assets/1ff3d37f70.svg" alt="Image 6">
-        <img src="/assets/e2a6211ba4.svg" alt="Image 7">
-        <img src="/assets/337fde51ba.svg" alt="Image 8">
-        <img src="/assets/300eb16d19.svg" alt="Image 8">
-        <img src="/assets/dc288f8032.svg" alt="Image 8">
+    <div class="CustomHome">
+      <img src="/assets/go.png" alt="示例图片" class="responsive-image" />
     </div>
-</div>
-
-</template>
+  <div class="CustomLogo">
+      <div class="CustomImg">
+          <img src="/assets/221212112.svg" alt="Image 1">
+          <img src="/assets/91b7b86cc6.svg" alt="Image 2">
+          <img src="/assets/en2gie.svg" alt="Image 3">
+          <img src="/assets/17f8d97df5.svg" alt="Image 5">
+          <img src="/assets/1ff3d37f70.svg" alt="Image 6">
+          <img src="/assets/e2a6211ba4.svg" alt="Image 7">
+          <img src="/assets/337fde51ba.svg" alt="Image 8">
+          <img src="/assets/300eb16d19.svg" alt="Image 8">
+          <img src="/assets/dc288f8032.svg" alt="Image 8">
+      </div>
+  </div>
+  </template>

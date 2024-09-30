@@ -7,7 +7,7 @@ aside: false
 title: 隐私服务
 ---
 
-<div class="AboutInfo">
+<div class="CustomContact">
 
 ## 隐私服务  
 * 用户在LinCDN进行登记注册、上传作品、参与讨论等活动时，经用户同意及确认，本网站将通过注册表格、订单等形式要求用户提供一些个人资料。    

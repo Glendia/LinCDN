@@ -4,23 +4,6 @@ prev: false
 next: false
 aside: false
 ---
-
-<style>
-    .CustomContact {
-        padding: 20px;
-        background: #ffffff;
-        border-radius: 10px;
-    }
-    .CustomContactButtom {
-        margin-top:20px;
-        padding: 20px;
-        background: #ffffff;
-        border-radius: 10px;
-    }
-</style>
-<script setup>
-import MapContainer from "../components/MapContainer.vue";
-</script>
     
 <div class="CustomContact">  
 
@@ -42,7 +25,4 @@ Twitter：[https://twitter.com/lincdn](https://twitter.com/lincdn)
 公众号：[无序拾音](https://mp.weixin.qq.com/s/h4-7h_h-h5h-h5h-h5h)  
 
 抖音：[LinCDN](https://v.douyin.com/LinCDN)
-</div>
-<div class="CustomContactButtom"> 
-<MapContainer />
 </div>
