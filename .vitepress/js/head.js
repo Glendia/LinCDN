@@ -1,7 +1,8 @@
+import { Script } from "vm";
+
 // .vitepress/js/nav.js
 export const head = [
   ["link", { rel: "stylesheet", href: "https://giscus.app/themes/light.css" }],
-  ["script", { defer: "", src: "https://giscus.app/client.js" }],
   [
     "meta",
     {
@@ -18,7 +19,15 @@ export const head = [
     {
       name: "keywords",
       content:
-        "免费内容分发,免费托管,快速字体托管,免费CDN,静态资源托管,高速缓存,全球加速,数据分发网络,阿里云OSS,网站加速,性能优化,开发者工具,安全可靠",
+        "免费内容分发,免费托管,快速字体托管,免费CDN,静态资源托管,高速缓存,全球加速,数据分发网络,阿里云OSS,网站加速,性能优化,开发者工具,安全可靠"
     },
   ],
+  [
+    "script",
+    {
+      src: "https://esm.sh/giscus",
+      type: "module",
+    },
+  ],
+
 ];

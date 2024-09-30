@@ -3,6 +3,11 @@
     background-color: #f5f6fb;
 }
 }
+
+.dark{
+  background-color: #1e1e1e;
+
+}
 :root{
     --vp-nav-height: 80px;
     --vp-nav-logo-height: 40px;
@@ -40,8 +45,15 @@
   .VPHome{
     margin-bottom: 0;
   }
-  .container{
-    padding: 0 !important;
+  .VPSidebarItem.level-0 .text{
+    font-size: 16px !important;
+  }
+  .VPNavScreenMenuLink{
+    font-size: 16px !important;
+    text-align: center;
+  }
+  .VPSidebar.open{
+    border-radius: 0 16px 16px 0;
   }
   .dark{
     --vp-c-bg: #1e1e1e;
@@ -97,4 +109,35 @@
     --vp-c-admonition-details-summary-focus-ring-shadow-width: 2px;
     --vp-c-admonition-details-summary-focus-ring-shadow-offset: 2px;
     --vp-c-admonition-details-summary-focus-ring-shadow-inset: 0;
+  }
+  .giscus-container {
+    margin: 20px 70px 20px 0;
+    text-align: center;
+    padding: 0 70px;
+    border-radius: 16px;
+    background-color: #ffffff;
+  }
+  .giscus-container p {
+    margin: 20px auto;
+    font-size: 22px;
+    color: #666;
+    line-height: 30px;
+    font-weight: 800;
+    padding-top:  20px;
+  }
+  @media (max-width: 768px) {
+    .giscus-container {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+  }
+  }
+
+  .AboutInfo {
+    padding: 30px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100vh-80px;
   }

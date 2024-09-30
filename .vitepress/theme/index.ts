@@ -6,6 +6,7 @@ import './style.css'
 import './custom.css'
 import './fonts.css'
 
+
 export default {
   extends: DefaultTheme,
   Layout: () => {

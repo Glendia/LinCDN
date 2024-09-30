@@ -17,7 +17,7 @@ export default defineConfig({
   base: "/", //基础路径
   title: "LinCDN", //标题
   titleTemplate: ":title - LinCDN", //标题
-  description: "免费CDN", //描述
+  description: "Lincdn 提供基于阿里云OSS的免费CDN服务，助力网站加速与性能优化。享受高速缓存与全球加速带来的卓越访问体验。", //描述
   //cleanUrls: true, //链接后面的.html去掉
   outDir: "dist", //输出目录
   assetsDir: "./assets", //静态资源目录

@@ -5,12 +5,13 @@
     "vue": "^3.5.10"
   },
   "type": "module",
-   "scripts": {
+  "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview"
   },
   "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
     "vitepress-plugin-comment-with-giscus": "^1.1.15"
   }
 }
